@@ -55,15 +55,16 @@ h6 {
     top: 0;
     width: 100%;
     padding: 20px 0;
-    background: rgba(0, 0, 0, 0.95);
+    background: #00000000; 
+    /*old background - rgba(0, 0, 0, 0.95) */
     backdrop-filter: blur(10px);
     z-index: 1000;
     transition: var(--transition);
 }
 
 .navbar.scrolled {
-    padding: 15px 0;
-    background: rgba(0, 0, 0, 0.98);
+    padding: 25px 0;
+    background: rgb(0, 0, 0);
 }
 
 .nav-wrapper {
@@ -75,7 +76,7 @@ h6 {
 .logo {
     font-size: 28px;
     font-weight: 800;
-    background: linear-gradient(135deg, #c6a43f 0%, #d4b85c 100%);
+    background: linear-gradient(135deg, #f9bd17 0%, #ffbf00 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: 1px;
@@ -88,7 +89,7 @@ h6 {
 }
 
 .logo span {
-    background: linear-gradient(135deg, #c6a43f 0%, #d4b85c 100%);
+    background: linear-gradient(135deg, #ffbf00 0%, #775504 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -151,7 +152,7 @@ h6 {
 .menu-toggle {
     display: none;
     font-size: 24px;
-    color: var(--white);
+    color: #a78001;
     cursor: pointer;
 }
 
