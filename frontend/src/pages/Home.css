@@ -1,0 +1,145 @@
+.hero {
+    height: 90vh;
+    background-image: url('/banner.jpeg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 70px;
+}
+
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    max-width: 800px;
+    padding: 2rem;
+}
+
+.hero-title {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+}
+
+.about-grid {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+    color: #444;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+
+.feature {
+    text-align: center;
+}
+
+.feature span {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.feature h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+}
+
+.amenities {
+    background: #f8f8f8;
+}
+
+.amenities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.amenity-card {
+    background: white;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 4px;
+    transition: transform 0.3s;
+}
+
+.amenity-card:hover {
+    transform: translateY(-5px);
+}
+
+.amenity-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.amenity-card p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.cta {
+    text-align: center;
+    background: white;
+}
+
+.cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.cta p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero {
+        height: 70vh;
+    }
+
+    .features {
+        gap: 1.5rem;
+    }
+
+    .cta h2 {
+        font-size: 1.8rem;
+    }
+}
