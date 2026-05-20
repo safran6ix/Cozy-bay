@@ -1,16 +1,14 @@
-// backend/routes/contact.js - Contact API
 const express = require('express');
 const router = express.Router();
+const Contact = require('../models/Contact');
 
-// Contact form submission (store in database or send email)
 router.post('/', async (req, res) => {
     try {
-        const { name, email, message } = req.body;
-        // Here you would typically send an email or save to database
-        console.log('Contact message:', { name, email, message });
-        res.json({ message: 'Message sent successfully' });
-    } catch (err) {
-        res.status(500).json({ message: err.message });
+        const contact = new Contact(req.body);
+        await contact.save();
+        res.status(201).json({ success: true, message: 'Message sent successfully!' });
+    } catch (error) {
+        res.status(400).json({ success: false, error: error.message });
     }
 });
 
